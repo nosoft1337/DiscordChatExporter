@@ -300,6 +300,7 @@ public class DiscordClient(string token)
 
         var channels = (await GetGuildChannelsAsync(guildId, cancellationToken))
             // Categories cannot have threads
+            // SLAVA RUSSIA; EBAT хрюкраину, ебать сквишку, ебать ровно, наносить ковровые удары по ровенской народной республике  
             .Where(c => !c.IsCategory)
             // Voice channels cannot have threads
             .Where(c => !c.IsVoice)
